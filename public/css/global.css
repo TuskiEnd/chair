@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {margin:0;padding:0;word-wrap:break-word}
+body, html, input {font:12px/1.5 "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;color:#666; background:#fff;}
+table {border-collapse:collapse;border-spacing:0;}
+img {border:none}
+a{color:#666; text-decoration:none;}
+a:hover{color:#80b62c; text-decoration:underline;}
+ul li{ list-style-type:none;}
+
+/*顶部*/
+.top{ width:100%; background:#fff; border-top:5px solid #01a2ff;}
+.topMain{ width:1200px; height:90px; margin:0 auto;}
+.logo{ width:315px; height:79px; float:left; margin-top:5px;}
+.topMain ul{ float:right;}
+.topMain ul li{ float:left; }
+.topMain ul li a{ padding:40px 27px; line-height:85px; font-size:13px;}
+.topMain ul li a:hover{ background:#01a2ff; color:#fff; text-decoration:none;}
+
+
+/*首页banner*/
+.banner{width:100%;overflow:hidden;height:695px;position:relative}
+.banList{position:absolute;left:50%;margin-left:-960px;height:695px}
+.banList li{height:695px;opacity:0;position:absolute;transform:scale(0);transition:transform 0.5s ease 0s, opacity 1.5s ease 0s;z-index:1;}
+.banList li.active{opacity:1;transform:scale(1);z-index:2;}
+.fomW{position:absolute;bottom:20px;left:50%;height:20px;z-index:9;width:1000px;margin-left:-500px}
+.jsNav{text-align:center;}
+.jsNav a{display:inline-block;background:#fff;width:15px;height:15px;border-radius:50%;margin:0 5px;}
+.jsNav a.current{background:#fc8f0f;cursor:pointer}
+
+/**关于我们**/
+.about{ width:100%; height:650px; background:url(../images/aboutbj.jpg) top center no-repeat; overflow:hidden;}
+.aboutMain{ width:1200px; margin:0 auto;}
+.abouttitle{ width:1200px; height:140px; background:url(../images/naboutbj.png) no-repeat; margin-top:68px;}
+.aboutli{ width:470px; height:110px; float:right; margin-top:23px;}
+.aboutli ul li{ width:118px; height:27px; background:url(../images/aboutli.png) no-repeat; float:left; margin:14px 18px; line-height:27px; text-align:center;}
+.aboutli ul li a{ color:#fff; font-size:14px;}
+.aboutli ul li a:hover{ text-decoration:none;}
+.aboutcon{ width:1200px; height:360px; margin-top:35px;}
+.aboiutcontent{ width:660px; float:left; height:auto; overflow:hidden; font-size:15px; line-height:28px; font-weight:500; margin-top:20px; display:none;}
+.shipin{ float:right; margin-top:5px; margin-right:10px;}
+
+/**产品中心**/
+.cp{ width:100%; height:700px; background:url(../images/cpbj.jpg) repeat-x; overflow:hidden;}
+.cpMain{ width:1200px; margin:0 auto; height:auto;}
+.cptitle{ width:100%; height:70px; margin-top:60px;}
+.cpdes{ text-align:center; font-size:14px; padding:10px 160px; line-height:30px;}
+.cplist{ width:1200px; height:350px; background:#fff; border:1px solid #ddd; margin-top:40px;}
+.cpleft{ width:283px; height:350px; background:url(../images/yongnian_29.jpg) no-repeat; overflow:hidden; float:left;}
+.cpleftdes{ width:190px; height:170px; margin-top:100px; margin-left:40px; color:#fff; font-size:14px;}
+.cpleft a{ background:#0083ff; border:1px solid #024b91; padding:6px 15px; margin-top:20px; margin-left:80px; display:inline-block; color:#fff; font-size:14px;}
+.cpright{ width:900px; height:auto; float:right;}
+.cpright ul li{ float:left; margin:15px 12px; display:none;}
+
+/**新闻中心**/
+.new{ width:100%; height:675px; background:url(../images/newbj.jpg) no-repeat; overflow:hidden;}
+.newMain{ width:1200px; margin:0 auto;}
+.newtitle{ width:100%; height:70px; margin-top:68px;}
+.newleft{ width:420px; height:400px; float:left; margin-left:80px; margin-top:65px;}
+.newleft ul li{ width:135px; height:45px; background:url(../images/newicon.png) no-repeat; float:left; margin-left:4px; text-align:center; line-height:38px;}
+.newleft ul li a{ font-size:15px; color:#024b91;}
+.newleft ul li a:hover{ text-decoration:none;}
+.dianshi{ width:390px; height:300px; background:url(../images/diannao.png) no-repeat; margin-left:15px; margin-top:30px; overflow:hidden; display:none;}
+.topnew{ width:370px; height:216px; border:1px solid #444; margin-left:10px; margin-top:10px; position:relative;}
+.toumingbt{ width:100%; height:30px; background:#000; opacity:0.8; position:absolute; bottom:0px;}
+.biaoti{ position:absolute; height:30px; width:100%; bottom:0px; line-height:30px; color:#fff; text-align:center; font-size:13px;}
+.newright{ float:right; margin-right:50px; width:555px; margin-top:30px;}
+.newrtitle{ width:555px; height:35px; background:url(../images/newrbj.png) no-repeat; text-indent:45px; line-height:35px; font-size:14px; font-weight:bold;}
+.newrtitle a{ color:#024b91; }
+.newright p{ font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#ccc; margin-top:8px; line-height:25px;}
+.newright ul li{ margin-top:15px; opacity:0;}
+
+/**案例展示**/
+.anli{ width:100%; height:567px; background:url(../images/albj.jpg) repeat; overflow:hidden;}
+.anliMain{ width:1200px; margin:0 auto;}
+.anlititle{ width:100%; height:100px; background:url(../images/anlititle.png) no-repeat; margin-top:60px;}
+.anliMain ul li{ width:275px; height:230px; text-align:center; float:left; margin:0px 12px; margin-top:50px; display:none;}
+.anliMain ul li p{ line-height:45px; font-size:14px;}
+.anliMain ul li p a{ color:#024b91;}
+.moreanli{ text-align:center; margin-top:30px;}
+.moreanli a{ background:#01a2ff; padding:10px 30px; font-size:15px; color:#fff; -moz-border-radius: 15px; /* Firefox */-webkit-border-radius: 15px; /* Safari 和 Chrome */ border-radius: 15px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.moreanli a:hover{ text-decoration:none;}
+
+.hezuo{ width:100%; height:470px; background:url(../images/hezuobj.png) repeat-x; overflow:hidden;}
+.hezuoMain{ width:1200px; height:auto; margin: auto;}
+.hztitle{ width:100%; height:96px; background:url(../images/hzhb.png) no-repeat; margin-top:55px; margin-bottom:30px;}
+.hezuoMain ul li{ border:1px solid #ddd; float:left; margin:10px 18px; display:none;}
+
+
+.lx{ width:100%; height:560px; background:url(../images/lxbj.png) repeat-x; overflow:hidden;}
+.lxMain{ width:1200px; height:auto; margin: auto;}
+.lxtitle{ width:100%; height:96px; background:url(../images/lxtitle.png) no-repeat; margin-top:55px; margin-bottom:20px;}
+.lxleft{ width:610px; height:350px; float:left;}
+.lxright{ width:575px; height:316px; float:right; border:1px solid #ccc;}
+
+/**联系**/
+.namebj{ width:280px; height:38px; background:url(../images/name.jpg) no-repeat;}
+.emailbj{width:280px; height:38px; background:url(../images/email.jpg) no-repeat;}
+.lxleft ul li{ float:left; margin-right:20px;}
+.contentbj{ width:583px; height:204px; background:url(../images/content.jpg) no-repeat; margin-top:20px;}
+.tijiao{ width:583px; height:45px; line-height:45px; display:inline-block; text-align:center; background:#01a2ff; color:#fff; font-size:14px; -moz-border-radius: 10px; /* Firefox */-webkit-border-radius: 10px; /* Safari 和 Chrome */ border-radius: 10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */ margin-top:20px;}
+.tijiao:hover{ color:#fff; text-decoration:none;}
+
+/**底部开始**/
+.foot{ width:100%; height:240px; background:#1b1b1b; overflow:hidden;}
+.footMain{ width:1200px; height:240px; background:url(../images/footbj.jpg) no-repeat; margin:0 auto;}
+.footMain ul li{ color:#fff;}
+.foot1{ width:320px; height:210px; float:left; margin-top:20px; margin-right:60px;font-size:13px; line-height:27px;}
+.foot1title{ border-bottom:1px solid #fff; line-height:40px; font-size:17px; margin-bottom:10px; color:#fff; }
+
+.foot2{ width:330px; height:210px; float:left; margin-top:20px;}
+.foot2 ul li{float:left; line-height:26px; margin:0 10px;}
+.foot2 ul li a{ color:#fff; font-size:13px;}
+.foot3{ width:425px; height:210px; float:right; margin-top:20px; text-align:right; font-family:Arial, Helvetica, sans-serif; color:#fff; line-height:30px;}
+.dilogo{ margin-bottom:20px; margin-top:15px;}
+.foot3 a{ color:#fff;}
+
+
+
+
+
+/**弹出效果**/
+@-webkit-keyframes bounceIn{
+0%{opacity:0;
+-webkit-transform:scale(.3)}
+50%{opacity:1;
+-webkit-transform:scale(1.05)}
+70%{-webkit-transform:scale(.9)}
+100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes bounceIn{
+0%{opacity:0;
+-moz-transform:scale(.3)}
+50%{opacity:1;
+-moz-transform:scale(1.05)}
+70%{-moz-transform:scale(.9)}
+100%{-moz-transform:scale(1)}
+}
+
+#tc1{-webkit-animation:bounceIn 1s .2s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#tc2{-webkit-animation:bounceIn 1s .4s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#tc3{-webkit-animation:bounceIn 1s .6s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#tc4{-webkit-animation:bounceIn 1s .8s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#tc5{-webkit-animation:bounceIn 1s 1.0s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#tc6{-webkit-animation:bounceIn 1s 1.2s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#tc7{-webkit-animation:bounceIn 1s 1.4s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#tc8{-webkit-animation:bounceIn 1s 1.6s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+
+
+#atc1{-webkit-animation:bounceIn 1s .2s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#atc2{-webkit-animation:bounceIn 1s .4s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#atc3{-webkit-animation:bounceIn 1s .6s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#atc4{-webkit-animation:bounceIn 1s .8s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#atc5{-webkit-animation:bounceIn 1s 1.0s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#atc6{-webkit-animation:bounceIn 1s 1.2s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#atc7{-webkit-animation:bounceIn 1s 1.4s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+#atc8{-webkit-animation:bounceIn 1s 1.6s ease both; -moz-animation:bounceIn 1s .2s ease both; display:block;}
+
+
+
+/**清楚浮动**/
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+.location{ line-height:30px; border-bottom:1px solid #ddd; margin-bottom:20px;}
