@@ -57,12 +57,19 @@ ul li {
 }
 
 .language {
+  cursor: pointer;
   width: 60px;
   position: relative;
   float: right;
+  text-align: center;
+}
+
+.language:hover .language-list {
+  display: block;
 }
 
 .language-list {
+  display: none;
   position: absolute;
   top: 30px;
   right: 0;
@@ -79,7 +86,8 @@ ul li {
   height: 22px;
   line-height: 22px;
 }
-.language-item:hover{
+
+.language-item:hover {
   cursor: pointer;
   background-color: #01a2ff;
 }
@@ -91,10 +99,21 @@ ul li {
   text-align: center;
   font-size: 12px;
   color: #fff;
-  justify-content: space-around;
+  margin-left: -10px;
+  justify-content: space-between;
 }
-.language-arrow::after{
-  border: 8px;
+
+.language-arrow {
+  position: relative;
+}
+
+.language-arrow::after {
+  position: absolute;
+  content: ' ';
+  top: 50%;
+  left: 4px;
+  margin-top: -2px;
+  border: 5px solid #fff;
   height: 0;
   width: 0;
   border-color: #fff transparent transparent transparent;
@@ -102,15 +121,14 @@ ul li {
 
 .topMain {
   width: 1200px;
-  height: 90px;
+  height: 60px;
   margin: 0 auto;
 }
 
 .logo {
   width: 315px;
-  height: 79px;
+  height: 60px;
   float: left;
-  margin-top: 5px;
 }
 
 .topMain ul {
@@ -122,8 +140,8 @@ ul li {
 }
 
 .topMain ul li a {
-  padding: 40px 27px;
-  line-height: 85px;
+  padding: 24px 27px;
+  line-height: 60px;
   font-size: 13px;
 }
 
@@ -137,7 +155,7 @@ ul li {
 .banner {
   width: 100%;
   overflow: hidden;
-  height: 695px;
+  height: 500px;
   position: relative
 }
 
@@ -194,7 +212,7 @@ ul li {
 /**关于我们**/
 .about {
   width: 100%;
-  height: 650px;
+  height: 450px;
   background: url(../images/aboutbj.jpg) top center no-repeat;
   overflow: hidden;
 }
@@ -252,7 +270,6 @@ ul li {
   line-height: 28px;
   font-weight: 500;
   margin-top: 20px;
-  display: none;
 }
 
 .shipin {
@@ -330,9 +347,16 @@ ul li {
   float: right;
 }
 
+.cpright-text {
+  font-size: 14px;
+  color: #333;
+  margin-top: 15px;
+  text-align: center;
+}
+
 .cpright ul li {
   float: left;
-  margin: 15px 12px;
+  margin: 55px 18px;
   display: none;
 }
 
@@ -350,9 +374,11 @@ ul li {
 }
 
 .newtitle {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 70px;
-  margin-top: 68px;
+  margin-top: 48px;
 }
 
 .newleft {
@@ -361,6 +387,18 @@ ul li {
   float: left;
   margin-left: 80px;
   margin-top: 65px;
+}
+
+.newtitle a {
+  width: 135px;
+  height: 45px;
+  background: url(../images/newicon.png) no-repeat;
+  float: left;
+  margin-left: 4px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 15px;
+  color: #024b91;
 }
 
 .newleft ul li {
@@ -458,7 +496,7 @@ ul li {
 /**案例展示**/
 .anli {
   width: 100%;
-  height: 567px;
+  height: 367px;
   background: url(../images/albj.jpg) repeat;
   overflow: hidden;
 }
@@ -623,75 +661,18 @@ ul li {
 /**底部开始**/
 .foot {
   width: 100%;
-  height: 240px;
   background: #1b1b1b;
   overflow: hidden;
 }
 
 .footMain {
   width: 1200px;
-  height: 240px;
-  background: url(../images/footbj.jpg) no-repeat;
-  margin: 0 auto;
+  font-size: 12px;
+  margin: 15px auto;
+  text-align: center;
 }
 
 .footMain ul li {
-  color: #fff;
-}
-
-.foot1 {
-  width: 320px;
-  height: 210px;
-  float: left;
-  margin-top: 20px;
-  margin-right: 60px;
-  font-size: 13px;
-  line-height: 27px;
-}
-
-.foot1title {
-  border-bottom: 1px solid #fff;
-  line-height: 40px;
-  font-size: 17px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.foot2 {
-  width: 330px;
-  height: 210px;
-  float: left;
-  margin-top: 20px;
-}
-
-.foot2 ul li {
-  float: left;
-  line-height: 26px;
-  margin: 0 10px;
-}
-
-.foot2 ul li a {
-  color: #fff;
-  font-size: 13px;
-}
-
-.foot3 {
-  width: 425px;
-  height: 210px;
-  float: right;
-  margin-top: 20px;
-  text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  line-height: 30px;
-}
-
-.dilogo {
-  margin-bottom: 20px;
-  margin-top: 15px;
-}
-
-.foot3 a {
   color: #fff;
 }
 

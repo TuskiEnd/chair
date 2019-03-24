@@ -1,18 +1,11 @@
 // JavaScript Document
 // JavaScript Document
 
-//关于我们
-$(window).scroll(function() {	
-			if ($(window).scrollTop() > 650) {
-				$(".aboiutcontent").attr('id','tc1');
-			} else {
-				$(".aboiutcontent").removeAttr('id','tc1');
-			}											
-});
+
 
 //产品
 $(window).scroll(function() {	
-			if ($(window).scrollTop() > 1200) {
+			if ($(window).scrollTop() > 1000) {
 				$(".cpright ul li:nth-child(1)").attr('id','atc1');
 				$(".cpright ul li:nth-child(2)").attr('id','atc2');
 				$(".cpright ul li:nth-child(3)").attr('id','atc3');
@@ -36,7 +29,7 @@ $(window).scroll(function() {
 
 //新闻
 $(window).scroll(function() {	
-			if ($(window).scrollTop() > 1800) {
+			if ($(window).scrollTop() > 1500) {
 				$(".newright ul li:nth-child(1)").animate({opacity:'1'},500);
 				$(".newright ul li:nth-child(2)").animate({opacity:'1'},1000);
 				$(".newright ul li:nth-child(3)").animate({opacity:'1'},1500);
@@ -46,7 +39,7 @@ $(window).scroll(function() {
 });
 //新闻
 $(window).scroll(function() {	
-			if ($(window).scrollTop() > 1800) {
+			if ($(window).scrollTop() > 1500) {
 				$(".dianshi").attr('id','tc1');
 				
 			} else {
@@ -56,7 +49,7 @@ $(window).scroll(function() {
 		
 //案例
 $(window).scroll(function() {	
-			if ($(window).scrollTop() > 2500) {
+			if ($(window).scrollTop() > 2000) {
 				$(".anliMain ul li:nth-child(1)").attr('id','tc1');
 				$(".anliMain ul li:nth-child(2)").attr('id','tc2');
 				$(".anliMain ul li:nth-child(3)").attr('id','tc3');
@@ -72,7 +65,7 @@ $(window).scroll(function() {
 
 //合作伙伴
 $(window).scroll(function() {	
-			if ($(window).scrollTop() > 3000) {
+			if ($(window).scrollTop() > 2500) {
 				$(".hezuoMain ul li:nth-child(1)").attr('id','tc1');
 				$(".hezuoMain ul li:nth-child(2)").attr('id','tc2');
 				$(".hezuoMain ul li:nth-child(3)").attr('id','tc3');
