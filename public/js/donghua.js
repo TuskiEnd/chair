@@ -79,3 +79,9 @@ $(window).scroll(function() {
 				$(".hezuoMain ul li:nth-child(5)").removeAttr('id','tc5');
 			}											
 });
+
+$(function () {
+  $('.tabClick').click(function () {
+    $('.newcon').hide().eq($(this).index()).show('slow');
+  })
+});
