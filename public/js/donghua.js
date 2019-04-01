@@ -4,7 +4,7 @@
 
 //产品
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 1000) {
+  if ($(window).scrollTop() > 600) {
     $(".cpright ul li:nth-child(1)").attr('id', 'atc1');
     $(".cpright ul li:nth-child(2)").attr('id', 'atc2');
     $(".cpright ul li:nth-child(3)").attr('id', 'atc3');
@@ -28,17 +28,21 @@ $(window).scroll(function () {
 
 //新闻
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 1500) {
+  if ($(window).scrollTop() > 800) {
     $(".newright ul li:nth-child(1)").animate({ opacity: '1' }, 500);
     $(".newright ul li:nth-child(2)").animate({ opacity: '1' }, 1000);
     $(".newright ul li:nth-child(3)").animate({ opacity: '1' }, 1500);
     $(".newright ul li:nth-child(4)").animate({ opacity: '1' }, 2000);
+    $(".newright ul li:nth-child(5)").animate({ opacity: '1' }, 2500);
+    $(".newright ul li:nth-child(6)").animate({ opacity: '1' }, 3000);
+    $(".newright ul li:nth-child(7)").animate({ opacity: '1' }, 3500);
+    $(".newright ul li:nth-child(8)").animate({ opacity: '1' }, 4000);
   } else {
   }
 });
 //新闻
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 1500) {
+  if ($(window).scrollTop() > 800) {
     $(".dianshi").attr('id', 'tc1');
 
   } else {
@@ -48,7 +52,7 @@ $(window).scroll(function () {
 
 //案例
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 2000) {
+  if ($(window).scrollTop() > 1600) {
     $(".anliMain ul li:nth-child(1)").attr('id', 'tc1');
     $(".anliMain ul li:nth-child(2)").attr('id', 'tc2');
     $(".anliMain ul li:nth-child(3)").attr('id', 'tc3');
@@ -68,7 +72,7 @@ $(window).scroll(function () {
 
 //合作伙伴
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 2500) {
+  if ($(window).scrollTop() > 2300) {
     $(".hezuoMain ul li:nth-child(1)").attr('id', 'tc1');
     $(".hezuoMain ul li:nth-child(2)").attr('id', 'tc2');
     $(".hezuoMain ul li:nth-child(3)").attr('id', 'tc3');
@@ -96,7 +100,7 @@ $(window).scroll(function () {
 });
 
 $(function () {
-  $('.tabClick').click(function () {
-    $('.newcon').hide().eq($(this).index()).show('slow');
-  })
+  // $('.tabClick').click(function () {
+  //   $('.newcon').hide().eq($(this).index()).show('slow');
+  // })
 });
