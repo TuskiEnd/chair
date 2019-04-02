@@ -266,7 +266,7 @@ ul li {
   float: left;
   height: auto;
   overflow: hidden;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 500;
   margin-top: 40px;
@@ -382,11 +382,18 @@ ul li {
 }
 
 .newleft {
-  width: 420px;
+  width: 520px;
   height: 400px;
   float: left;
   margin-left: 80px;
   margin-top: 65px;
+}
+
+.newleft-inner {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .newtitle span {
@@ -462,7 +469,7 @@ ul li {
 .newright {
   float: right;
   margin-right: 50px;
-  width: 555px;
+  width: 500px;
   margin-top: 30px;
 }
 
@@ -646,6 +653,16 @@ ul li {
   width: 280px;
   height: 38px;
   background: url(../images/email.jpg) no-repeat;
+}
+
+.phonebj {
+  width: 579px;
+  height: 38px;
+  background: url(../images/phone.png) no-repeat;
+  background-position: 10px center;
+  background-size: 14px 14px;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
 
 .lxleft ul li {

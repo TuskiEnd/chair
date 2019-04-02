@@ -40,7 +40,7 @@
         </div>
         <ul>
             <li><a href="index.html">网站首页</a></li>
-            <li><a href="index.html#product">产品技术</a></li>
+            <li><a href="index.html#product">产品信息</a></li>
             <li><a href="index.html#sendEmail">留言反馈</a></li>
         </ul>
         <div class="clearfix"></div>
@@ -77,9 +77,9 @@
         <div class="aboutcon">
             <div class="aboiutcontent">
                 <div>
-                    <p style="font-size: 20px;margin-bottom: 10px;">公司简介</p>
+                    <p style="font-size: 23px;margin-bottom: 10px;">公司简介</p>
                     上海洛渤施德电机设备有限公司成立于2008年，也是美国著名电机AURORA MOTORS 公司属下的上海生产基地。<br /><br />
-                    坐拥超过3000平方米的生产基地 目前月产能可以达到每月400，可以通过增加设备，产能增加至每月800台，或开发制造其他电气或机械设备 可以制造特殊规格的电机设备并提供相关服务
+                    坐拥超过3000平方米的生产基地 目前月产能可以达到每月400台，可以通过增加设备，产能增加至每月800台，或开发制造其他电气或机械设备 可以制造特殊规格的电机设备并提供相关服务
 
                 </div>
             </div>
@@ -100,14 +100,13 @@
         </div>
         <div class="newcon">
             <div class="newleft">
-                <div class="dianshi">
-                    <div class="topnew">
-                        <a href="#">
-                            <img src="public/images/dianshi.png" width="370" height="216" />
-                            <div class="toumingbt"></div>
-                            <div class="biaoti">发展历程</div>
-                        </a>
-                    </div>
+                <div class="newleft-inner">
+                    <img src="public/images/dianshi.png" width="240" height="126" />
+                    <img src="public/images/dianshi.png" width="240" height="126" />
+                </div>
+                <div class="newleft-inner">
+                    <img src="public/images/dianshi.png" width="240" height="126" />
+                    <img src="public/images/dianshi.png" width="240" height="126" />
                 </div>
             </div>
             <div class="newright">
@@ -191,7 +190,6 @@
 <div class="anli">
     <div class="main-title">
         <h2>产品应用</h2>
-        <h4>PRODUCT APPLICATION</h4>
     </div>
     <div class="anliMain">
         <ul>
@@ -233,6 +231,9 @@
                 <a href="javascript;;">
                     <img src="./public/images/awards10.png" alt="">
                 </a>
+                <a href="javascript;;">
+                    <img src="./public/images/awards11.jpeg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -244,7 +245,6 @@
     <div class="hezuoMain">
         <div class="main-title">
             <h2>合作伙伴</h2>
-            <h4>COOPERATIVE PARTNER</h4>
         </div>
         <ul>
             <li><a class="partner-block" href="javascript:;">
@@ -280,20 +280,43 @@
       $("#email").focus();
       return false;
     }
+    if ($("#phone").val() == "" || $("#phone").val() == "请填写联系人手机号") {
+      alert("请填写联系人手机号！");
+      $("#phone").focus();
+      return false;
+    }
     if ($("#content").val() == "") {
       alert("请填写留言内容！");
       $("#content").focus();
       return false;
     }
+    $.ajax({
+      url: "/sendMail",
+      data: {
+        nickname: $('#nickname').val(),
+        email: $('#email').val(),
+        phone: $('#phone').val(),
+        content: $('#content').val(),
+      },
+      success: function (result) {
+        if (result && result.true) {
+          alert('发送成功！');
+        } else {
+          alert('发送失败，请重新提交！');
+        }
+      }
+    });
     $("#form").submit();
   }
 </script>
 <div class="lx" id="sendEmail">
     <div class="lxMain">
-        <div class="lxtitle"></div>
+        <div class="main-title">
+            <h2>联系我们</h2>
+        </div>
         <div class="lxcon">
             <div class="lxleft">
-                <form name="form" id="form" action="/sendMail" method="POST" enctype="application/x-www-form-urlencoded">
+                <div method="POST" enctype="application/x-www-form-urlencoded">
                     <ul>
                         <li>
                             <div class="namebj">
@@ -311,6 +334,14 @@
                                        onblur="this.value = this.value == '' ? this.defaultValue : this.value" />
                             </div>
                         </li>
+                        <li>
+                            <div class="phonebj" style="margin-top: 15px">
+                                <input type="text" name="phone" id="phone" value="请填写联系人手机号"
+                                       style="width:543px; margin-top:3px; border:none; height:32px; margin-left:35px; outline:none;"
+                                       onfocus="this.value = this.value == this.defaultValue ? '' : this.value"
+                                       onblur="this.value = this.value == '' ? this.defaultValue : this.value" />
+                            </div>
+                        </li>
                         <div class="clearfix"></div>
                     </ul>
                     <div class="contentbj">
@@ -318,7 +349,7 @@
                                   style=" width:543px; margin-left:35px; height:190px; margin-top:8px; border:none;outline:none;"></textarea>
                     </div>
                     <a class="tijiao" href="javascript:void(0);" onClick="cfm_msg();return false;">提交留言</a>
-                </form>
+                </div>
             </div>
             <div class="lxright">
 
