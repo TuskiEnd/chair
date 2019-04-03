@@ -87,6 +87,10 @@ ul li {
   line-height: 22px;
 }
 
+.language-item a {
+  color: #fff;
+}
+
 .language-item:hover {
   cursor: pointer;
   background-color: #01a2ff;
@@ -385,7 +389,7 @@ ul li {
   width: 520px;
   height: 400px;
   float: left;
-  margin-left: 80px;
+  margin-left: 100px;
   margin-top: 65px;
 }
 
@@ -469,7 +473,7 @@ ul li {
 .newright {
   float: right;
   margin-right: 50px;
-  width: 500px;
+  width: 530px;
   margin-top: 30px;
 }
 
@@ -483,8 +487,24 @@ ul li {
   font-weight: bold;
 }
 
+.newrtitle-en {
+  height: 35px;
+  background: url(../images/newrbj.png) no-repeat;
+  text-indent: 45px;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 660px;
+  background-size: 100% 660px;
+}
+
 .newrtitle a {
   color: #024b91;
+}
+
+.newrtitle-en a {
+  color: #024b91;
+  font-size: 12px;
 }
 
 .newright p {
