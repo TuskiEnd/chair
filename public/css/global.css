@@ -58,7 +58,6 @@ ul li {
 
 .language {
   cursor: pointer;
-  width: 60px;
   position: relative;
   float: right;
   text-align: center;
@@ -105,6 +104,19 @@ ul li {
   color: #fff;
   margin-left: -10px;
   justify-content: space-between;
+}
+
+.language-cur a {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+}
+
+.language-cur .language-line {
+  color: #fff;
+  margin: 0 5px;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .language-arrow {
