@@ -33,6 +33,10 @@
         <div class="logo">
             <a href="./index_en.html">
                 <img height="50" style="margin-top: 10px" src="./public/images/logo.jpeg" alt="">
+                <span class="logo-text">
+                    上海洛渤施德电机设备有限公司
+                    <span class="logo-text-inner">Shanghai Robust Electric Co Ltd</span>
+                </span>
             </a>
         </div>
         <ul>
@@ -247,7 +251,7 @@
         content: $('#content').val(),
       },
       success: function (result) {
-        if (result && result.true) {
+        if (result == true) {
           alert('Success！');
         } else {
           alert('Faild，Please try again!');
