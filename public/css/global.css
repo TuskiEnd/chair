@@ -190,13 +190,15 @@ ul li {
 }
 
 .banList {
+  width: 100%;
   position: absolute;
-  left: 50%;
-  margin-left: -960px;
+  /*left: 50%;*/
+  /*margin-left: -960px;*/
   height: 695px
 }
 
 .banList li {
+  width: 100%;
   height: 695px;
   opacity: 0;
   position: absolute;
@@ -210,7 +212,10 @@ ul li {
   transform: scale(1);
   z-index: 2;
 }
-
+.banList li img{
+  display: block;
+  margin: 0 auto;
+}
 .fomW {
   position: absolute;
   bottom: 20px;
