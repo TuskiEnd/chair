@@ -658,7 +658,7 @@ ul li {
 .hezuoMain ul li {
   border: 1px solid #ddd;
   float: left;
-  margin: 10px 18px;
+  margin: 15px 48px;
   display: none;
 }
 
@@ -944,8 +944,8 @@ ul li {
 
 .partner-block, .partner-block-two {
   position: relative;
-  width: 200px;
-  height: 140px;
+  width: 300px;
+  height: 160px;
   display: inline-block;
   background-color: #fff;
 }
@@ -955,7 +955,7 @@ ul li {
 }
 
 .partner-block img, .partner-block-two img {
-  max-width: 200px;
+  max-width: 280px;
   max-height: 140px;
   position: absolute;
   top: 50%;
